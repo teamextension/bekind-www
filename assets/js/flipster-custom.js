@@ -23,7 +23,7 @@ $(document).ready(function() {
 	    // [true|false]
 	    // Loop around when the start or end is reached
 	
-	    autoplay: 6000,
+	    autoplay: 10000,
 	    // [false|milliseconds]
 	    // If a positive number, Flipster will automatically advance to next item after that number of milliseconds
 	
