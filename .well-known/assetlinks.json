@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.bekind.bekind",
+      "sha256_cert_fingerprints":
+      ["AA:02:5D:5E:E0:9D:E7:B5:92:04:AD:28:33:3E:1E:6A:F3:26:84:F4:0E:BE:AD:F7:DE:71:C8:68:08:03:CF:E6"]
+    }
+  }
+]
