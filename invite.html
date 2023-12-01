@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect</title>
+</head>
+<body>
+<script>
+    const getMobileOS = () => {
+        const ua = navigator.userAgent
+        if (/android/i.test(ua)) {
+            return "Android"
+        }
+        else if (/iPad|iPhone|iPod/.test(ua)) {
+            return "iOS"
+        }
+        return "Other"
+    }
+
+    function redirect() {
+        const os = getMobileOS()
+        navigator.clipboard.writeText(window.location.href);
+        if (os === 'Android') {
+            window.location.href = "https://play.google.com/store/apps/details?id=app.bekind.bekind";
+        } else if (os === 'iOS') {
+            window.location.href = "https://apps.apple.com/us/app/id1518395872";
+        } else {
+            window.location.href = "https://www.bekind.app/";
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+            redirect();
+        }).catch(err => {
+            redirect();
+        });
+
+    });
+</script>
+</body>
+</html>
