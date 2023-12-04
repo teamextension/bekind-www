@@ -20,7 +20,6 @@
 
     function redirect() {
         const os = getMobileOS()
-        navigator.clipboard.writeText(window.location.href);
         if (os === 'Android') {
             window.location.href = "https://play.google.com/store/apps/details?id=app.bekind.bekind";
         } else if (os === 'iOS') {
